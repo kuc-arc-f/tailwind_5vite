@@ -1,0 +1,35 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="/css/tailwind.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100">
+  <div class="container mx-auto px-8 pb-20">
+    <h1 class="text-4xl font-bold text-center">Form</h1>
+    <hr class="my-2" />
+    normal:
+    <textarea class="mt-1 block w-full" 
+      rows="6"></textarea>
+    <hr class="my-2" />
+    <div class="mb-8">
+      <label for="other">その他2</label>
+      <textarea  id="other" cols="30" rows="8"
+       class="w-full py-2 border-b focus:outline-none focus:border-b-2 focus:border-indigo-500 placeholder-gray-500 placeholder-opacity-50" placeholder="その他"></textarea>
+    </div>
+    <hr class="my-2" />
+    12:
+    <textarea  id="other" cols="30" rows="12"
+    class="w-full" placeholder="その他"></textarea>
+    <hr class="my-2" />
+    <select class="block w-full mt-1 h-10">
+      <option>Selct please</option>
+      <option>Corporate event</option>
+      <option>Wedding</option>
+      <option>Birthday</option>
+      <option>Other</option>
+    </select>    
+  </div>
+</body>
+</html>

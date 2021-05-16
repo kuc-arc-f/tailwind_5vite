@@ -1,0 +1,49 @@
+<!doctype html>
+<!-- tailwindcss / modal -->
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="/css/tailwind.css" rel="stylesheet">
+  <link href="./02_modal.css?a2" rel="stylesheet">
+</head>
+<body class="bg-gray-100">
+  <div class="container mx-auto px-8 pb-20">
+    <h1 class="text-4xl font-bold text-center">02_modal_3</h1>
+    <hr class="my-2" />
+    modal :<br/>
+    <button id="openModal">Open modal</button>
+    <!-- モーダルエリアここから -->
+    <section id="modalArea" class="modalArea">
+      <div id="modalBg" class="modalBg"></div>
+      <div class="modalWrapper">
+        <div class="modalContents">
+          <h3 class="text-3xl font-bold">Here are modal
+          </h3>
+          <hr class="my-2" />
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt 
+            ut labore et dolore magna aliqua. </p>
+        </div>
+        <div id="closeModal" class="closeModal">
+          ×
+        </div>
+      </div>
+    </section>
+    <script>
+      (function () {
+        const modalArea = document.getElementById('modalArea');
+        const openModal = document.getElementById('openModal');
+        const closeModal = document.getElementById('closeModal');
+        const modalBg = document.getElementById('modalBg');
+        const toggle = [openModal,closeModal,modalBg];
+        
+        for(let i=0, len=toggle.length ; i<len ; i++){
+          toggle[i].addEventListener('click',function(){
+            modalArea.classList.toggle('is-show');
+          },false);
+        }
+      }());
+      </script>
+  </div>
+</body>
+</html>

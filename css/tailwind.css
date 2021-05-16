@@ -1,0 +1,14 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "./components/buttons.css";
+@import "./components/cards.css";
+@import "./components/bgcolor.css";
+@import "./components/forms.css";
+@import "tailwindcss/utilities";
+
+/*
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+*/
+
